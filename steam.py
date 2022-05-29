@@ -8,7 +8,7 @@ requests = requests.get(url)
 
 soup = BeautifulSoup(requests.text , "html.parser")
 # print(soup, "line 9 is" )
-teme = soup.find_all("div", class_="itemInfo")
+teme = soup.find_all("div", class_="itemInfo") 
 print(teme, "line 11 is")
 test= teme.find_all("p", class_="itemName")
 for href  in test.find_all("a" ):
